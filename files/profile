@@ -1,9 +1,6 @@
 # Set curl path
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
-# https://github.com/keybase/keybase-issues/issues/1712#issuecomment-141226705
-export GPG_TTY=$(tty)
-
 # who cares about casing? I don't
 set completion-ignore-case on
 
@@ -60,20 +57,16 @@ check_to_update $HOME/git/personal/dot/scripts/brew-update.sh brew 7
 
 source ~/.work-profile
 
-# added by Snowflake SnowSQL installer v1.0
-export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
 
-export PATH=/Users/rizowski/.fnm/current/bin:$PATH
-export FNM_MULTISHELL_PATH=/Users/rizowski/.fnm/current
-export FNM_DIR=/Users/rizowski/.fnm
+export PATH=/Users/$USER/.fnm/current/bin:$PATH
+export FNM_MULTISHELL_PATH=/Users/$USER/.fnm/current
+export FNM_DIR=/Users/$USER/.fnm
 export FNM_NODE_DIST_MIRROR=https://nodejs.org/dist
 export FNM_LOGLEVEL=all
-export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 autoload -U add-zsh-hook
 

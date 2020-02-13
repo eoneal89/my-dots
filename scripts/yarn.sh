@@ -11,5 +11,5 @@ YARN_VERSION="$(yarn --version)"
 print "YARN Version: $YARN_VERSION"
 
 printf "Installing globals"
-yarn global add eslint nodemon cwtail eslint-config-rizowski updtr babel-eslint eslint-watch mocha > /dev/null
+yarn global add nodemon updtr serverless > /dev/null
 echo " ✓"

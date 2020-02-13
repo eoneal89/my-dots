@@ -17,8 +17,8 @@ killall Finder
 
 # Dock
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock largesize -float 74
-defaults write com.apple.dock tilesize -float 36
+defaults write com.apple.dock largesize -float 128
+defaults write com.apple.dock tilesize -float 42
 
 # Siri
 defaults write com.apple.Siri StatusMenuVisible -bool false

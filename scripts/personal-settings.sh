@@ -44,10 +44,6 @@ if ! file_exists .editorconfig ; then
   link_dot_file editorconfig
 fi
 
-if ! file_exists .eslintrc ; then
-  link_dot_file eslintrc
-fi
-
 if ! file_exists .prettierrc ; then
   link_dot_file prettierrc
 fi

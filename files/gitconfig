@@ -5,6 +5,8 @@
   la = !git lg --all
 #[remote "origin"]
 #  fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+[core]
+	editor = code --wait
 [merge]
   tool = p4merge
 [mergetool "p4merge"]
@@ -14,18 +16,10 @@
   trustExitCode = false
   keepBackup = false
   prompt = false
-[commit]
-  gpgsign = true
 
 [user]
-  name = Colten Rouska
-  email = crouska@gmail.com
-  signingkey = F5C4A8AEAA463AD9879DB149F82640A0AEC7A210
+  name = Erika ONeal
+  email = e.oneal89@gmail.com
 
-[includeIf "gitdir:~/git/vs/**"]
+[includeIf "gitdir:~/projects/**"]
   path = ~/.gitconfig-work
-
-[includeIf "gitdir:~/git/workout/**"]
-  name = Colten Rouska
-  email = crouska@gmail.com
-  signingkey = F5C4A8AEAA463AD9879DB149F82640A0AEC7A210
