@@ -2,13 +2,13 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "schniz/tap"
+
 brew "awk"
 brew "awscli"
 brew "elixir"
 brew "git"
 brew "python"
 brew "imagemagick"
-brew "kibana"
 brew "mas"
 brew "openvpn"
 brew "postgresql"
@@ -19,24 +19,20 @@ brew "watch"
 brew "yarn"
 brew "z"
 brew "schniz/tap/fnm"
+
 cask "charles"
 cask "docker"
 cask "iterm2"
 cask "marshallofsound-google-play-music-player"
 cask "ngrok"
 cask "p4v"
-cask "realm-studio"
 cask "slack"
 cask "soqlxplorer"
+cask "spectacle"
 cask "spotify"
 cask "teamviewer"
 cask "tunnelblick"
 cask "visual-studio-code"
+
 mas "1Password 7", id: 1333542190
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Slack", id: 803453959
