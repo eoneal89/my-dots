@@ -47,13 +47,13 @@ swap_npm_user() {
   if [[ $thedir == *"vs"* ]]; then
     ln -sf ~/git/vs/.npmrc ~/.npmrc
    else
-     ln -sf ~/git/personal/.npmrc ~/.npmrc
+     ln -sf ~/git/personal-projects/.npmrc ~/.npmrc
    fi
 }
 
 add-zsh-hook chpwd swap_npm_user && swap_npm_user
 
-check_to_update $HOME/git/personal/dot/scripts/brew-update.sh brew 7
+check_to_update $HOME/git/personal-projects/dot/scripts/brew-update.sh brew 7
 
 source ~/.work-profile
 
